@@ -1,10 +1,17 @@
 #include <stdio.h>
 int main()
 {
-    int y;
-    printf("enter year");
-    scanf("%d",&y);
-if(y%400 ==0 || (y%4==0 && y%100!=0)) printf("leap year");
-else printf("not a leap year");
+    int a,b,c;
+    printf("enter a,b,c");
+    scanf("%d%d%d",&a,&b,&c);
+   if(a>b)
+   {
+       if(a>c) printf("a is larger");
+       else printf("c is larger");
+   }
+   else
+   {
+       if(b>c) printf("b is larger");
+       else printf("c is larger");
+   }
 }
-
